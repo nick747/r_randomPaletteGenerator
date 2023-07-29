@@ -4,3 +4,54 @@
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
+
+#app {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.colorContainer {
+  color: white;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorHex {
+  background-color: #121212;
+  color: white;
+  padding: 5px;
+}
+
+button {
+  position: absolute;
+  bottom: 10%;
+  right: 40%;
+  left: 40%;
+  z-index: 10;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  border: 4px white solid;
+  background-color: #121212;
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  transform: scale(1.1);
+}
